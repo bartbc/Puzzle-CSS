@@ -17,7 +17,7 @@ main{
 }
 .grid {/* si l'on applique le grid sur le main c'est ok mais les positions des childs sont différentes*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 X 1fr ok car les images s'ajoutent dans le sens du flux en fonction de leur taille (test: les rentres pour chaque ligne)*/
+    grid-template-columns: auto auto auto; /* ou 3 X 1fr ok car les images s'ajoutent dans le sens du flux en fonction de leur taille (test: les rentres pour chaque ligne)*/
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 div :nth-child(1){
@@ -26,55 +26,55 @@ div :nth-child(1){
     top: 28px;
     left: -27px;
 }
-main :nth-child(2){
+div :nth-child(2){
     position:  relative;
     left: -170px;
 }
-main :nth-child(3){
+div :nth-child(3){
     position:  relative;
     left: -255px;
 }
-main :nth-child(4){
+div :nth-child(4){
     position:  relative;
     top: -86px;
 }
-main :nth-child(5){
+div :nth-child(5){
     position:  relative;
     top: -161px;
     left: -90px;
 }
-main :nth-child(6){
+div :nth-child(6){
     position:  relative;
     top: -157px;
     left: -250px;
 }
-main :nth-child(7){
+div :nth-child(7){
     position:  relative;
     top: -186px;
 }
-main :nth-child(8){
+div :nth-child(8){
     transform: rotate(90deg);
     position:  relative;
     top: -216px;
     left: -184px;
 }
-main :nth-child(9){
+div :nth-child(9){
     transform: rotate(180deg);
     position:  relative;
     top: -238px;
     left: -328px;
 }
-main :nth-child(10){
+div :nth-child(10){
     position:  relative;
     top: -259px;
 }
-main :nth-child(11){
+div :nth-child(11){
     transform: rotate(-90deg);
     position:  relative;
     top: -325px;
     left: -38px;
 }
-main :nth-child(12){
+div :nth-child(12){
     transform: rotate(-90deg);
     position:  relative;
     top: -335px;
